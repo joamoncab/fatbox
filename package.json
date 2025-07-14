@@ -1,0 +1,25 @@
+{
+  "name": "fatbox",
+  "version": "1.0.0",
+  "description": "A resumable file upload proxy to Catbox, Litterbox, and pomf.lain.la. Supports chunked uploads and target switching.",
+  "author": "shipwr3ckd",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shipwr3ckd/fatbox"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "express": "^5.1.0",
+    "form-data": "^4.0.3",
+    "multer": "^2.0.1"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
