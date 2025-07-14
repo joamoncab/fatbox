@@ -169,6 +169,10 @@ async function forwardToDestination(destination, filePath, originalName, userhas
   return response.data;
 }
 
+app.get("/", (req, res) => {
+  res.status(200).send("fatbox is working.");
+});
+
 app.use((req, res) => {
   res.status(404).json({
     message: `Route ${req.method}:${req.path} not found`,
