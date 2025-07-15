@@ -152,7 +152,7 @@ async function forwardToDestination(destination, filePath, originalName, userhas
 
   const form = new FormData();
   form.append("reqtype", "fileupload");
-  form.append("fileToUpload", fs.createReadStream(filePath));
+  form.append("fileToUpload", fs.createReadStream(filePath), originalName);
   if (destination === "catbox" && userhash) form.append("userhash", userhash);
   if (destination === "litterbox") form.append("time", time);
 
